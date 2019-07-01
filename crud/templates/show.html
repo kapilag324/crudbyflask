@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOOKS</title>
+</head>
+<body>
+
+	{% block content %}
+	{% for post in books %}
+		<p>{{ post.title }}</p>
+		<!-- <p>{{ post.author  }}</p> -->
+	{% endfor %}
+	{% endblock content %} 
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+  <body>
+    <h1>Add book</h1>
+    <form method="POST" action="./addData">
+      <input type="text" name="title">
+      <input type="submit" value="Add">
+    </form>
+    <h1>Update book</h1>
+    <form method="POST" action="./update">
+      <input type="text" name="oldtitle" placeholder="oldtitle">
+      <input type="text" name="newtitle" placeholder="newtitle">
+      <input type="submit" value="update">
+    </form>
+    <h1>Delete book</h1>
+    <form method="POST" action="./delete">
+      <input type="text" name="title">
+      <!-- <input type="text" name="newtitle"> -->
+      <input type="submit" value="Delete">
+    </form>
+    <h1>show book by id</h1>
+    <form method="POST" action="./singleBook">
+      <input type="text" name="id">
+      <!-- <input type="text" name="newtitle"> -->
+      <input type="submit" value="show">
+    </form>
+    <h1>SHOW book</h1>
+    <form method="POST" action="./allBooks">
+      <!-- <input type="text" name="title"> -->
+      <!-- <input type="text" name="newtitle"> -->
+      <input type="submit" value="show">
+    </form>
+   <!--  {% block content %}
+    <h1> ALL BOOKS</h1>
+    {% for book in books %}
+      <h3>{{ book.title }}</h3>
+    {%  endfor %}
+    {% endblock %} -->
+  </body>
+</html>
